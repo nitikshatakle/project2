@@ -1,0 +1,414 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    width: 130px;
+    height: 60px;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #0f1324;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.call-icon {
+    color: #0f1324;
+    margin-right: 10px;
+}
+
+.btn-contact {
+    background-color: #0f1324;
+    color: white;
+    border: none;
+    margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-nav.show {
+        display: flex !important;
+        flex-direction: column;
+    }
+}
+
+/* .sticky{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding-top: 0;
+} */
+
+.bg_img{
+    background-image: url(tower4.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+.back_color{
+    background-color: rgba(0, 0,0,0.8);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+.text{
+    font-size: 45px;
+    color: white;
+    margin-left: 180.5px;
+    padding-top: 180.5px;
+}
+
+.text_1{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 180.5px;
+}
+
+.text_2{
+    color: white;
+    margin-left: 180.5px;
+}
+
+.possession{
+    text-align: right;
+    margin-left: 88%;
+    margin-top: 30px;
+}
+
+.pos-rel{
+    background-color: #0f1324;
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+}
+
+.under{
+    writing-mode: vertical-rl;
+    color: gray;
+    margin-left: 180.5px;
+}
+
+.writing{
+    writing-mode: vertical-rl;
+    color: gray;
+    margin-left: 176px;
+    padding-top: 30px;
+}
+
+.title{
+    padding-top: 150px;
+    margin-left: 150px;
+}
+
+.text_thin{
+    font-weight: 100;
+    color: white;
+    font-size: 50px;
+}
+
+.text_medium{
+    color: white;
+    font-size: 50px;
+}
+
+.para{
+    color: white;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.middle{
+    margin-left: 80px;
+    margin-top: 170px;
+}
+
+/* .owl-carousel{
+    padding-top: -50%;
+} */
+
+
+.wri_mode{
+    writing-mode: vertical-rl;
+    color: gray;
+    margin-left: 176px;
+    padding-top: 100px;
+    margin-top: -30%;
+}
+
+.underline{
+    writing-mode: vertical-rl;
+    color: gray;
+    margin-left: 180.5px;
+}
+
+.arrow{
+    color: #0f1324;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.ENQUIRE{
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+.new{
+    background-image: url(interior.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+.over-img{
+    background-image: url('interior.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    background-size: cover;
+}
+
+.over_bg{
+    background-color:rgba(3,10,30,0.9);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    background-size: cover;
+}
+
+.slider{
+    margin: 50px;
+    margin-left: 600px;
+}
+
+.btn{
+    margin-left: 20px;
+    color: gray;
+    background-color: #0F1324;
+    border: none;
+    padding: 10px;
+}
+
+.am_mode{
+    writing-mode: vertical-rl;
+    color: gray;
+    margin-left: 176px;
+}
+
+.under_am{
+    writing-mode: vertical-rl;
+    color: gray;
+    margin-left: 180.5px;
+}
+
+.rare{
+    margin: 100px;
+    margin-left: 200px;
+}
+
+.sp{
+    font-weight: 600; 
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.main{
+    margin-left: 400px!important;
+}
+
+.box{
+    height: 90px;
+    width: 200px;
+    padding: 10px;
+    margin-left: 10px!important;
+}
+
+.main2{
+    margin-left: 400px!important;
+    margin-top: 10px!important ;
+}
+
+.road{
+    margin: 100px;
+    margin-left: 60px;
+}
+
+.main3{
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+.box_2{
+    width: 170px!important;
+    height: 170px!important;
+    padding: 10px!important;
+    border: 1px solid gray;
+}
+
+.map_img{
+    background-color:white !important;
+    z-index: 1000;
+    /* position: absolute; */
+    /* display: none; */
+}
+/* .shei{
+    margin-top: -35%;
+} */
+
+.school{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.hospital{
+    margin-left: 110px;
+    margin-top: 20px;   
+}
+
+.entertainment{
+    margin-left: 70px;
+    margin-top: 20px;   
+}
+
+.Park{
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.map{
+    position: relative;
+}
+
+.map_img{
+top: 0px;
+position: absolute;
+margin-left: 200px;
+}
+
+.true{
+    margin: 100px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+.ov_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .ov_container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .up_img{
+    max-width: 400px;
+    height: 500px;
+    transition: transform 0.3s ease;
+    background-size: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .ov_container:hover img {
+    transform: translateY(-200px);
+  }
+  
+  .ov_container:hover .overlay {
+    transform: translateY(0);
+  }
+  
+.footer{
+    background-color:#0f1324;
+    width: 100vw;
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    background-size: cover;
+}
+
+/* Styles for the background */
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    display: none; /* Hidden by default */
+    z-index: 1; /* Place it above other elements */
+}
+
+/* Styles for the form */
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 2; /* Place it above the background */
+    display: none; /* Hidden by default */
+}
+
+/* Additional styles for the form when it's visible */
+form.visible {
+    display: block;
+}
+
+/* .ar_img{
+    color: white;
+} */
