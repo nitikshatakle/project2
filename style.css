@@ -72,7 +72,7 @@
 }
 
 
- @media only screen and (max-width: 768px) {
+ @media(max-width: 768px) {
         /* CSS styles for mobile devices */
     .bg_img{
             max-width: 100%;
@@ -114,7 +114,7 @@
     margin-top: 50%;
 }
 
-@media screen ,(max-width:767px) {
+@media(max-width:767px) {
     .text{
         font-size: 23px;
         color: white;
