@@ -189,8 +189,8 @@
     margin-left: 40px!important;
     margin-top: 10px!important;
 }
-.img_wh{
-    width: 150px!important;
+#carousel.carousel-item{
+    width: 100%;
 }
 
 }
