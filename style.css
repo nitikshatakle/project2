@@ -17,6 +17,7 @@
 
 .navbar-toggler-icon {
     background-color: #0f1324;
+    color: white;
 }
 
 .navbar-nav {
@@ -45,7 +46,7 @@
     margin-right: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 460px) {
     .navbar-nav.show {
         display: flex !important;
         flex-direction: column;
@@ -70,6 +71,17 @@
     margin-top: 10px;
 }
 
+
+ @media only screen and (max-width: 768px) {
+        /* CSS styles for mobile devices */
+    .bg_img{
+            max-width: 100%;
+            height: auto;
+        }
+    
+ }
+
+
 .back_color{
     background-color: rgba(0, 0,0,0.8);
     width: 100%;
@@ -87,12 +99,109 @@
     padding-top: 180.5px;
 }
 
+.now{
+    border: none;
+     background-color: #0f1324;
+     color: white;
+     width: 150px;
+     height: 40px;
+     margin-left: 150px; 
+     margin-top: 20px;
+}
+
+.custom-container-mg-left{
+    margin-left: 180.5px!important; 
+    margin-top: 50%;
+}
+
+@media screen ,(max-width:767px) {
+    .text{
+        font-size: 23px;
+        color: white;
+        margin-left: 70px;
+        padding-top: 70px;
+    }  
+
+    .text_1{
+        color: white;
+        font-size: 10px;
+        margin-top: 5px!important;
+        margin-left: 70px!important;
+    }
+    .text_2{
+        color: white;
+        margin-left: 70px!important; 
+    }
+    .possession{
+        text-align: right;
+        margin-left: 330px!important;
+        margin-top: 15px!important;
+        width: 100px;
+    }
+    .pos-rel{
+        background-color: #0f1324;
+        width: 100vw;
+        /* height: 60vh; */
+        /* display: inline-flex; */
+    }
+    .under{
+        writing-mode: vertical-rl;
+        color: gray;
+        margin-left: 5px!important;
+    }
+    .writing{
+        writing-mode: vertical-rl;
+        color: gray;
+        margin-left: 5px!important;
+        padding-top: 15px!important;
+    }
+    .now{
+        border: none;
+         background-color: #0f1324;
+         color: white;
+         width: 100px!important;
+         height: 25px!important;
+         margin-left: 70px!important; 
+         margin-top: 10px!important;
+         font-size: 10px!important;
+    }
+    
+.custom-container-mg-left{
+    margin-left: 70px!important; 
+    margin-top: 50%;
+    font-size: 40px!important;
+}
+.title{
+    padding-top: 75px!important;
+    margin-left: 40px!important;
+}
+.text_thin{
+    font-weight: 60;
+    color: white;
+    font-size: 25px!important;
+}
+.text_medium{
+    color: white;
+    font-size: 30px!important;
+}
+.para{
+    color: white;
+    margin-left: 40px!important;
+    margin-top: 10px!important;
+}
+.img_wh{
+    width: 150px!important;
+}
+
+}
+
 .text_1{
     color: white;
     font-size: 20px;
     margin-top: 10px;
     margin-left: 180.5px;
 }
+
 
 .text_2{
     color: white;
@@ -146,6 +255,7 @@
     margin-left: 150px;
     margin-top: 20px;
 }
+
 
 .middle{
     margin-left: 80px;
