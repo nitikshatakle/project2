@@ -9,8 +9,10 @@
 }
 
 .navbar-toggler {
-    border: none;
+    border-radius: 50%;
+    background-color: #0F1324;
     outline: none;
+    color: white;
 }
 
 .navbar-toggler-icon {
@@ -44,10 +46,6 @@
 }
 
 @media (max-width: 767px) {
-    .navbar-nav {
-        display: none;
-    }
-
     .navbar-nav.show {
         display: flex !important;
         flex-direction: column;
