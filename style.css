@@ -408,15 +408,19 @@
     border: 1px solid gray;
 }
 
-.map_img{
+/* .map_img{
     background-color:white !important;
-    z-index: 1000;
+    z-index: 1000; */
     /* position: absolute; */
     /* display: none; */
-}
+/* } */
 /* .shei{
     margin-top: -35%;
 } */
+
+.head_shei{
+    margin-top: 20px;
+}
 
 .school{
     margin-left: 100px;
@@ -443,9 +447,15 @@
 }
 
 .map_img{
-top: 0px;
+top: -50px;
 position: absolute;
-margin-left: 200px;
+margin: 0px 90px;
+width: 1300px;
+background-color:white !important;
+z-index: 1000;
+border: 1px solid gray;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
 }
 
 .true{
