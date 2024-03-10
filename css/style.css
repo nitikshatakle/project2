@@ -249,16 +249,24 @@
 }
 
 .under{
-    writing-mode: vertical-rl;
-    color: gray;
+    /* writing-mode: vertical-rl;
+    color: gray; */
     margin-left: 180.5px;
+    border-left: 2px solid gray;
+    height: 100px;
+    margin-top: 60px;
 }
 
 .writing{
-    writing-mode: vertical-rl;
-    color: gray;
-    margin-left: 176px;
-    padding-top: 30px;
+        transform: rotate(-90deg); /* Adjust the rotation angle as needed */
+        transform-origin: left top; /* Adjust the rotation origin as needed */
+        position: absolute; /* Position the text */
+        left: 20px; /* Adjust the left position as needed */
+        letter-spacing: 2.8px;
+        color: gray;
+        margin-top: 140px;
+        margin-left: 145px;
+    
 }
 
 .title{
@@ -283,6 +291,11 @@
     margin-top: 20px;
 }
 
+.owl-carousel{
+    position: relative;
+    top: -150px;
+    right: -200px;
+}
 
 .middle{
     margin-left: 80px;
@@ -294,19 +307,12 @@
 } */
 
 
-.wri_mode{
-    writing-mode: vertical-rl;
-    color: gray;
-    margin-left: 176px;
-    padding-top: 100px;
-    margin-top: -30%;
-}
-
-.underline{
-    writing-mode: vertical-rl;
-    color: gray;
+/* .underline{
     margin-left: 180.5px;
-}
+    border-left: 2px solid gray;
+    height: 100px;
+    margin-top: 60px;
+} */
 
 .arrow{
     color: #0f1324;
@@ -361,16 +367,30 @@
     padding: 10px;
 }
 
-.am_mode{
-    writing-mode: vertical-rl;
-    color: gray;
-    margin-left: 176px;
+.underline{
+    /* writing-mode: vertical-rl;
+    color: gray; */
+    margin-left: 180.5px;
+    border-left: 2px solid gray;
+    height: 100px;
+    /* margin-top: 60px; */
 }
 
-.under_am{
-    writing-mode: vertical-rl;
+.am_mode{
+    transform: rotate(-90deg); /* Adjust the rotation angle as needed */
+    transform-origin: left top; /* Adjust the rotation origin as needed */
+    position: absolute; /* Position the text */
+    left: 20px; /* Adjust the left position as needed */
+    letter-spacing: 2.8px;
     color: gray;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+.specific{
     margin-left: 180.5px;
+    border-left: 2px solid gray;
+    height: 70px;
 }
 
 .rare{
