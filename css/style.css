@@ -291,12 +291,17 @@
     margin-top: 20px;
 }
 
-.owl-carousel{
+.new-carousel{
     position: relative;
-    top: -150px;
-    right: -200px;
+    top: -200px;
 }
 
+
+.carousel-item{
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .middle{
     margin-left: 80px;
     margin-top: 170px;
