@@ -350,8 +350,8 @@
 
 .arrow{
     color: #0f1324;
-    margin-top: 15px;
-    margin-left: 20px;
+    /* margin-top: 2px; */
+    margin-left: 30px;
 }
 
 .ENQUIRE{
@@ -369,7 +369,7 @@
     margin-top: 10px;
 }
 .over-img{
-    background-image: url('interior.jpg');
+    background-image: url('../images/interior.jpg');
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -527,8 +527,15 @@ border-bottom-left-radius: 20px;
     margin-left: 200px;
     text-align: center;
 }
+/* .pre{
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 400px;
+    background-position: center center;
+    background-size: cover;
+} */
 
-.ov_img {
+ .ov_img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -538,16 +545,22 @@ border-bottom-left-radius: 20px;
   .ov_container {
     position: relative;
     overflow: hidden;
+    height: 500px;
+    width: 400px;
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+  
   
   .up_img{
     max-width: 400px;
     height: 500px;
     transition: transform 0.3s ease;
     background-size: cover;
-  }
+  } 
   
-  .overlay {
+   .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -560,13 +573,13 @@ border-bottom-left-radius: 20px;
     transition: transform 0.3s ease;
   }
   
-  .ov_container:hover img {
-    transform: translateY(-200px);
+  .ov_container:hover  {
+    background-size: contain;
   }
   
   .ov_container:hover .overlay {
     transform: translateY(0);
-  }
+  } 
   
 .footer{
     background-color:#0f1324;
