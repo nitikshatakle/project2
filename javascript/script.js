@@ -58,46 +58,32 @@ $(document).ready(function(){
     };
     
     });
-
-    document.addEventListener("DOMContentLoaded", function() {
-        const openFormButton = document.getElementById('open-form');
-        const contactForm = document.getElementById('contact-form');
-        const background = document.getElementById('background');
     
-        openFormButton.addEventListener('click', function() {
-            // Show the contact form and background
-            contactForm.classList.add('visible');
-            background.style.display = 'block';
-        });
-    
-        // Optional: Close the form when clicking outside of it
-        background.addEventListener('click', function() {
-            contactForm.classList.remove('visible');
-            background.style.display = 'none';
-        });
-    
-        // Prevent clicks within the form from closing it
-        contactForm.addEventListener('click', function(event) {
-            event.stopPropagation();
-        });
-    });
-    
-    
-// script.js
 
-// Get the button element
-var btn_contact = document.getElementById('myButton');
+// Get all the buttons and the form
+var forms = document.querySelectorAll('.myForm');
+var buttons = document.querySelectorAll('[id^="showFormButton"]');
 
-// Add click event listener to the button
-btn_contact.addEventListener('click', function() {
-    alert('Button clicked!');
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    var navbarToggler = document.querySelector('.navbar-toggler');
-    var navbarNav = document.querySelector('.navbar-nav');
-
-    navbarToggler.addEventListener('click', function () {
-        navbarNav.classList.toggle('show');
+// Add event listeners to each button
+buttons.forEach(function(button, index) {
+    button.addEventListener('click', function() {
+        toggleFormVisibility(forms[index]);
     });
 });
+
+// Function to toggle form visibility
+function toggleFormVisibility(form) {
+    if (form.style.display === 'none' || form.style.display === '') {
+        form.style.display = 'block';
+        overlay.style.display = 'block';
+    } else {
+        form.style.display = 'none';
+        overlay.style.display = 'none';
+    }
+}
+
+    
+function closeModal() {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'none';
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/intlTelInput.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -40,7 +41,7 @@
             <div>
                 <span><p class="fa fa-phone"></p></span>
                 <a href="tel:+91 20 6705 7005" id="hid-on-mob" class="call-icon">+91 20 6705 7005</a>
-                <button id="open-form" class="btn-contact" style="padding: 10px;">ENQUIRE NOW</button>
+                <button id="showFormButton1" class="btn-contact" style="padding: 10px;">ENQUIRE NOW</button>
             </div>
         </div>
     </nav>
@@ -82,15 +83,17 @@
         <p class="para">Inspired by grandiose, Amanora Gateway Towers 1 has carved a world of<br> bespoke residences, embellished with artistic brilliance and cutting-edge<br> design. Conceptualized by P&T Consultants, Singapore and interior-designed<br> by Total Design Solutions, Bangkok, this 45-storeyed residential marvel<br> transcends beyond one’s wildest dreams.</p>
       </div>
     </div>
-   
-    <div id="carousel" class="owl-carousel nonloop new_carousel">
-      <div><img class="carousel-item active" src="images/building.jpg" alt=""> </div>
+   <div class=" n_carousel row">
+     <div class="col-sm-4"></div>
+    <div id="carousel" class="owl-carousel nonloop new_carousel col-sm-8">
+      <div><img  class="carousel-item active" src="images/building.jpg" alt=""> </div>
       <div> <img class="carousel-item" src="images/building2.jpg" alt=""> </div>
       <div> <img class="carousel-item" src="images/frame1.jpg" alt=""> </div>
       <div> <img class="carousel-item" src="images/interior.jpg" alt=""> </div>
       <div> <img class="carousel-item" src="images/interior1.jpg" alt=""> </div>
       <div> <img class="carousel-item" src="images/wheelchair.jpg" alt=""> </div>
     </div>
+   </div>
     <div class="Gallery d-inline-flex" id="gallery">
         <div class="content_2">
             <div class="under">
@@ -110,7 +113,7 @@
     </div>
   <div class="owl-carousel" id="home"></div>
   
-      <div class="container d-none" id="exterior">
+      <div class="container d-none active" id="exterior">
       
           <div><img class="img_wh" src="images/tower1.jpg" alt=""> </div>
           <div> <img class="img_wh" src="images/tower2.jpg" alt=""> </div>
@@ -149,7 +152,7 @@
       </div>
     <div class="ENQUIRE d-inline-flex">
       <div class="button">
-        <button style="border: none; background-color: #0f1324; color: white; width: 180.5px; height: 40px;">ENQUIRE NOW</button>
+        <button style="border: none; background-color: #0f1324; color: white; width: 180.5px; height: 40px;" id="showFormButton2">ENQUIRE NOW</button>
       </div>
       <div>
        <p class="arrow">DOWNLOAD BROCHURE <span><img style="margin-left: 20px; width: 30px;height: 50px;" src="images/arrow.jpg" alt=""></span></p>
@@ -380,7 +383,7 @@
     </div>
   </div>
   <div class="button">
-    <button  style="border: none; background-color: #0f1324; color: white; width: 180.5px; height: 40px; margin-left: 45%;">ENQUIRE NOW</button>
+    <button  style="border: none; background-color: #0f1324; color: white; width: 180.5px; height: 40px; margin-left: 45%;" id="showFormButton3">ENQUIRE NOW</button>
 </div>
 <div class="footer">
   <div class="new_footer d-inline-flex">
@@ -397,17 +400,28 @@
     <p style="color: gray; margin-left: 600px;">Marketed By: <span><a style="color: gray;" href="https://beyondwalls.com/real-estate-marketing">BeyondWalls</a></span></p>
   </div>
 </div>
-<div id="background"></div>
-<form id="contact-form">
-  <h4 style="color: gray;">CONTACT FORM</h4>
-  <label for="name">NAME:</label>
-  <input type="text" id="name" name="name"><br>
-  <label for="email">EMAIL:</label>
-  <input type="email" id="email" name="email"><br>
-  <label for="phone">PHONE:</label>
-  <input  type="number" id="phone" name="phone"><br>
-  <button type="submit">Submit</button>
+<form class="myForm" style="display: none;" id="modal">
+   <span class="close-button" onclick="closeModal()">X</span>
+  <p class="contact">CONTACT FROM</p>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="name">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email </label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <select name="country-code" id="">
+            <option value="+91">India +91 <span class="iconify"></span></option>
+            <option value="+1">US +1</option>
+        </select>
+        <input type="tel" id="phone" placeholder="phone number">
+    </div>
 </form>
+<div id="overlay"></div>
+
 
 
    
@@ -426,6 +440,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="path/to/intlTelInput.js"></script>
 <script src="javascript/script.js"></script>
 </body>
 </html>
