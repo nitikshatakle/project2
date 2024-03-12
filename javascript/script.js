@@ -10,7 +10,7 @@ $(document).ready(function(){
             autoplayHoverPause:true,
             responsive:{
                 600:{
-                    items:4
+                    items:1.25
                 }
             }
         }
@@ -30,7 +30,7 @@ $(document).ready(function(){
                 autoplayHoverPause:true,
                 responsive:{
                     600:{
-                        items:4
+                        items:2
                     }
                 }
     });
@@ -50,7 +50,7 @@ $(document).ready(function(){
                 autoplayHoverPause:true,
                 responsive:{
                     600:{
-                        items:4
+                        items:1.5
                     }
                 }
         });
@@ -58,10 +58,15 @@ $(document).ready(function(){
     };
     
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        showCarousel('exterior');
+    });    
     
 
 // Get all the buttons and the form
-var forms = document.querySelectorAll('.myForm');
+var forms = document.querySelector('.myForm');
+// console.log(forms);
 var buttons = document.querySelectorAll('[id^="showFormButton"]');
 
 // Add event listeners to each button
@@ -73,6 +78,7 @@ buttons.forEach(function(button, index) {
 
 // Function to toggle form visibility
 function toggleFormVisibility(form) {
+    var form = document.querySelector(form);
     if (form.style.display === 'none' || form.style.display === '') {
         form.style.display = 'block';
         overlay.style.display = 'block';
@@ -85,5 +91,6 @@ function toggleFormVisibility(form) {
     
 function closeModal() {
     var modal = document.getElementById('modal');
+    document.getElementById("overlay").style.display = "none";
     modal.style.display = 'none';
 }

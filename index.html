@@ -41,7 +41,7 @@
             <div>
                 <span><p class="fa fa-phone"></p></span>
                 <a href="tel:+91 20 6705 7005" id="hid-on-mob" class="call-icon">+91 20 6705 7005</a>
-                <button id="showFormButton1" class="btn-contact" style="padding: 10px;">ENQUIRE NOW</button>
+                <button onclick="toggleFormVisibility('.myForm')" class="btn-contact" style="padding: 10px;">ENQUIRE NOW</button>
             </div>
         </div>
     </nav>
@@ -60,7 +60,7 @@
             <p class="text">4 BEDROOM <br>UBER-LUXURY<br> RESIDENCES</p>
             <p class="text_1">Starting From Rs. 7 Cr*</p>
             <p class="text_2">Hadapsar, Pune</p>
-            <button class="now">ENQUIRE NOW</button>
+            <button onclick="toggleFormVisibility('.myForm')" class="now">ENQUIRE NOW</button>
             <img class="possession" src="images/possession.png" alt="">
             <span class="custom-container-mg-left scroll-page banner-arrow">
                 <img src="images/banner-arrow.svg" alt="">
@@ -111,7 +111,15 @@
       <button class="btn" onclick="changedata('interior')">INTERIOR</button>
       <button class="btn" onclick="changedata('floorplan')">FLOOR PLAN</button>
     </div>
-  <div class="owl-carousel" id="home"></div>
+  <div class="owl-carousel" id="home">
+    <div><img class="img_wh" src="images/tower1.jpg" alt=""> </div>
+          <div> <img class="img_wh" src="images/tower2.jpg" alt=""> </div>
+          <div> <img class="img_wh" src="images/tower4.jpg" alt=""> </div>
+          <div> <img class="img_wh" src="images/tower5.jpg" alt=""> </div>
+          <div> <img class="img_wh" src="images/tower6.jpg" alt=""> </div>
+          <div> <img class="img_wh" src="images/tower7.jpg" alt=""> </div>
+          <div> <img class="img_wh" src="images/tower8.jpg" alt=""> </div>
+  </div>
   
       <div class="container d-none active" id="exterior">
       
@@ -152,7 +160,7 @@
       </div>
     <div class="ENQUIRE d-inline-flex">
       <div class="button">
-        <button style="border: none; background-color: #0f1324; color: white; width: 180.5px; height: 40px;" id="showFormButton2">ENQUIRE NOW</button>
+        <button onclick="toggleFormVisibility('.myForm')" style="border: none; background-color: #0f1324; color: white; width: 180.5px; height: 40px;" id="showFormButton2">ENQUIRE NOW</button>
       </div>
       <div>
        <p class="arrow">DOWNLOAD BROCHURE <span><img style="margin-left: 20px; width: 30px;height: 50px;" src="images/arrow.jpg" alt=""></span></p>
@@ -350,11 +358,11 @@
     <div class="ov_container" style="background-image: url('images/s1.jpg');">
       <h2 style="color: white; text-align: center; padding-top: 50%;">PREMIUM CONVENIENCES</h2>
       <div class="overlay">
-        <h2 style="text-align: left;">PREMIUM CONVENIENCES</h2>
+        <h2 style="text-align: left; margin-left: 30px;">PREMIUM CONVENIENCES</h2>
         <ul>
-          <li style="text-align: left;">Grand Entrance Lobby Marvelled by World's most renowned luxury brand and finest hand picked crystal</li>
-          <li style="text-align: left;">Pune's 1st Heated Pool at 23rd Floor</li>
-          <li style="text-align: left;">Calm your mind by taking a stroll in Zen Garden</li>
+          <li style="text-align: left; margin-left: 30px;">Grand Entrance Lobby Marvelled by World's most renowned luxury brand and finest hand picked crystal</li>
+          <li style="text-align: left; margin-left: 30px;">Pune's 1st Heated Pool at 23rd Floor</li>
+          <li style="text-align: left; margin-left: 30px;">Calm your mind by taking a stroll in Zen Garden</li>
         </ul>
       </div>
     </div>
@@ -383,7 +391,7 @@
     </div>
   </div>
   <div class="button">
-    <button  style="border: none; background-color: #0f1324; color: white; width: 180.5px; height: 40px; margin-left: 45%;" id="showFormButton3">ENQUIRE NOW</button>
+    <button onclick="toggleFormVisibility('.myForm')"  style="border: none; background-color: #0f1324; color: white; width: 180.5px; height: 40px; margin-left: 45%;" id="showFormButton3">ENQUIRE NOW</button>
 </div>
 <div class="footer">
   <div class="new_footer d-inline-flex">
