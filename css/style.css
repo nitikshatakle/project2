@@ -401,9 +401,13 @@
 .btn{
     margin-left: 20px;
     color: gray;
-    background-color: #0F1324;
+    background-color: #f8f4f4;
     border: none;
     padding: 10px;
+}
+.activeBtn{
+    background-color: #0F1324;
+    color: white;
 }
 
 .underline{

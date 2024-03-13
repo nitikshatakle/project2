@@ -35,9 +35,14 @@ $(document).ready(function(){
                 }
     });
     
-    window.changedata = function(id){
+    window.changedata = function(id,el){
         var home = document.getElementById(id);
         var exterior = home.getElementsByTagName('div');
+        var buttons = document.querySelectorAll('.btn');
+        buttons.forEach(function(el) {
+          el.classList.remove('activeBtn');
+        });
+        el.classList.toggle("activeBtn");
         owl.trigger('destroy.owl.carousel');
         owl.html(exterior);
         owl.owlCarousel({
@@ -58,6 +63,7 @@ $(document).ready(function(){
     };
     
     });
+
 
     document.addEventListener('DOMContentLoaded', function () {
         showCarousel('exterior');
