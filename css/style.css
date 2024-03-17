@@ -624,7 +624,7 @@ form {
     z-index: 2; /* Place it above the background */
     display: none; /* Hidden by default */
     width: 600px;
-    height: 330px;
+    height: 400px;
     padding-top: 30px;
 }
 
@@ -660,4 +660,10 @@ form.visible {
 .close-button{
     margin-left: 95%;
     top: -10px;
+}
+
+.submit{
+    border: 1px solid gray;
+    padding: 3px;
+    background-color: white;
 }

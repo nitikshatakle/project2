@@ -408,25 +408,29 @@
     <p style="color: gray; margin-left: 600px;">Marketed By: <span><a style="color: gray;" href="https://beyondwalls.com/real-estate-marketing">BeyondWalls</a></span></p>
   </div>
 </div>
-<form class="myForm" style="display: none;" id="modal">
+<form  action="php/enquire.php" method="post" class="myForm" style="display: none;" id="modal">
    <span class="close-button" onclick="closeModal()">X</span>
   <p class="contact">CONTACT FROM</p>
     <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="name">
+        <input type="text" class="form-control" id="name" placeholder="name" name="name">
     </div>
     <div class="form-group">
         <label for="exampleInputEmail1">Email </label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" name="email">
     </div>
     <div class="form-group">
-        <label for="phone">Phone</label>
+        <label for="phone">Phone</label><br>
+       <div class="d-inline-flex">
         <select name="country-code" id="">
-            <option value="+91">India +91 <span class="iconify"></span></option>
-            <option value="+1">US +1</option>
-        </select>
-        <input type="tel" id="phone" placeholder="phone number">
+          <option value="+91"> +91 <span class="iconify"></span></option>
+          <option value="+1"> +1</option>
+          <option value="+1"> +44</option>
+      </select><br>
+      <input type="tel" id="phone" placeholder="phone number" name="phone">
+       </div>
     </div>
+    <input type="submit" name="submit" id="submit" value="submit" class="submit">
 </form>
 <div id="overlay"></div>
 
