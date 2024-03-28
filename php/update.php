@@ -119,7 +119,7 @@ if (isset($_GET['id'])) {
     $id = (int)$_GET['id'];
     $phone = $_POST['phone'];
     $sql = "UPDATE enquired_users SET Name ='".$newName ."', Email = '".$email."', Phone = '".$phone."' WHERE ID = $id ";
-    echo $sql;
+    echo $sql.'<br>';
     if ($conn->query($sql) === TRUE){
         echo " Record updated successfully";
     }else{
