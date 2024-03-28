@@ -44,8 +44,8 @@
                 echo "<td>" . $row['Email'] . "</td>";
                 echo "<td>" . $row['Phone'] . "</td>";
                 echo "<td>";
-                echo "<a href='delete.php?id=" . $row['Id'] . "' class='btn btn-danger'>Delete</a>" ." ";
-                echo "<a href='update.php?id=" . $row['Id'] . "' class='btn btn-primary ml-2'>Update</a>";
+                echo "<a href='delete.php?id= $row[Id]' class='btn btn-danger'>Delete</a> ";
+                echo "<a href='update.php?id=$row[Id]' class='btn btn-primary ml-2'>Update</a>";
                 echo "</td>";
                 echo "</tr>";
             }
