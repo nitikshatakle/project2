@@ -125,6 +125,7 @@ if (isset($_GET['id'])) {
     }else{
         echo "Error:" . $sql . "<br>" . $conn->error;
     }
+    
    }
 ?>
 
