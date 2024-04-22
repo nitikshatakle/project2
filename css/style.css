@@ -397,6 +397,16 @@
     margin: 50px;
     margin-left: 600px;
 }
+@media(max-width:767px) {
+    .btn{
+        margin-left: 10px!important;
+        color: gray;
+        background-color: #f8f4f4;
+        border: none;
+        padding: 10px!important;
+    
+    } 
+}
 
 .btn{
     margin-left: 20px;

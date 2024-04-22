@@ -3,6 +3,7 @@
 include 'connect.php';
 if (isset($_GET['id'])) {
     $id = (int)$_GET['id'];
+
   
     if (!is_int($id)) {
         die("Invalid ID");
